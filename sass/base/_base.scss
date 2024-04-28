@@ -1,0 +1,15 @@
+@use '../abstract/variables' as *;
+@use '../abstract/mixins' as *;
+
+// contiene todo lo repetitivo
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: $bg-primary;
+}
+
+body{
+    padding: 60px;
+
+}
+
+@include colorize-headings($title-color);

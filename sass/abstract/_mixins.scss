@@ -1,0 +1,7 @@
+@mixin colorize-headings($color) {
+    @for $i from 1 through 6 {
+      h#{$i} {
+        color: $color;
+      }
+    }
+}
