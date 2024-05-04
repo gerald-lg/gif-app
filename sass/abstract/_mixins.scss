@@ -1,7 +1,73 @@
+@use './variables' as *;
+
 @mixin colorize-headings($color) {
     @for $i from 1 through 6 {
       h#{$i} {
         color: $color;
       }
     }
+}
+
+@mixin breakpoint($breakpoint, $direction: min) {
+    
+  @if map-has-key($breakpoints, $breakpoint) { 
+      $breakpoint-values: map-get($breakpoints, $breakpoint);
+      $breakpoint-min: map-get($breakpoint-values, min);
+      $breakpoint-max: map-get($breakpoint-values, max);
+
+      @if $direction == min {
+          @media (min-width: $breakpoint-min) {
+              @content;
+          }
+      }
+
+      @else {
+          @media (max-width: $breakpoint-max) {
+              @content;
+          }
+      }
+  
+  } @else {
+      
+      @if $direction == min {
+          @media (min-width: $breakpoint) {
+              @content;
+          }
+      }
+
+      @else {
+          @media (max-width: $breakpoint) {
+              @content;
+          }
+      }
+  }
+}
+
+@mixin responsive-heading-sizes {
+  @include breakpoint(sm, max) {
+      h1 { font-size: 24px !important; }
+      h2 { font-size: 20px !important; }
+      h3 { font-size: 18px !important; }
+      h4 { font-size: 16px !important; }
+      h5 { font-size: 14px !important; }
+      h6 { font-size: 12px !important; }
+  }
+  
+  @include breakpoint(md, max) {
+      h1 { font-size: 28px !important; }
+      h2 { font-size: 24px !important; }
+      h3 { font-size: 20px !important; }
+      h4 { font-size: 18px !important; }
+      h5 { font-size: 16px !important; }
+      h6 { font-size: 14px !important; }
+  }
+  
+  @include breakpoint(lg, max) {
+      h1 { font-size: 32px !important; }
+      h2 { font-size: 28px !important; }
+      h3 { font-size: 24px !important; }
+      h4 { font-size: 20px !important; }
+      h5 { font-size: 18px !important; }
+      h6 { font-size: 16px !important; }
+  }
 }

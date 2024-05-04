@@ -1,7 +1,15 @@
+@use '../abstract/mixins' as *;
+@use '../abstract/typography' as *;
+
 .waviy {
     position: relative;
     font-size: 60px;
     font-weight: 700;
+    font-family: $custom-font;
+
+    @include breakpoint(md, max){
+      font-size: 40px;
+    }
   }
   .waviy span {
     position: relative;
@@ -20,3 +28,4 @@
       transform: translateY(-20px)
     }
   }
+

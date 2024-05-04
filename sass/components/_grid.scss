@@ -5,6 +5,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 
     span.loader{
         margin: 50px;
@@ -13,8 +14,7 @@
 .title__center{
     display: flex;
     justify-content: center;
-
-    text-transform: uppercase;
     margin-bottom: 15px;
 }
+
 

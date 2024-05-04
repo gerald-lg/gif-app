@@ -3,23 +3,6 @@
  @import '../sass/components/cards';
  @import '../sass/components/spinner';
  @import '../sass/components/title';
-  
-input {
-  background-color: white;
-  border-radius: 5px;
-  border: 2px solid #00ADB5;
-  color: black;
-  font-size: 1.2rem;
-  outline: none;
-  padding: 10px 15px;
-  width: 100%;
-}
-  
-h2 {
-  font-size: 1.5rem;
-}
+ @import '../sass/components/input';  
 
-h3 {
-  font-size: 3rem;
-  margin-bottom: 5px;
-}
+ 

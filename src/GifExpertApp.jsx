@@ -15,6 +15,7 @@ export const GifExpertApp = () => {
 
     return (
         <>
+        
              <div className="waviy title__center">
                 <span style={{'--i': 1}}>G</span>
                 <span style={{'--i': 2}}>I</span>
