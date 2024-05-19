@@ -13,7 +13,7 @@ export const GifGrid = ( { category } ) => {
         <>
             {
                 //and logico
-                isLoading && ( <div className="card-grid"><span class="loader"></span></div> )
+                isLoading && ( <div className="card-grid"><span className="loader"></span></div> )
             }
 
             <h1 className='title__center'>{ category }</h1>
