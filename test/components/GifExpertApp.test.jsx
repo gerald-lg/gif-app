@@ -9,14 +9,4 @@ describe('Pruebas en el componente GifExpertApp', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('Debe retornar mas de una categoria', () => { 
-
-        render(<GifExpertApp />);
-
-        const onAddCategory = jest.fn();
-        console.log(onAddCategory);
-        screen.debug();
-
-    });
-
  });
