@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente GifExpertApp Snapshot del componente 1`] = `
+<div>
+  <div
+    class="waviy title__center"
+  >
+    <span
+      style="--i: 1;"
+    >
+      G
+    </span>
+    <span
+      style="--i: 2;"
+    >
+      I
+    </span>
+    <span
+      style="--i: 3;"
+    >
+      F
+    </span>
+    <span
+      style="--i: 4;"
+    >
+      E
+    </span>
+    <span
+      style="--i: 5;"
+    >
+      X
+    </span>
+    <span
+      style="--i: 6;"
+    >
+      P
+    </span>
+    <span
+      style="--i: 7;"
+    >
+      E
+    </span>
+    <span
+      style="--i: 8;"
+    >
+      R
+    </span>
+    <span
+      style="--i: 9;"
+    >
+      T
+    </span>
+    <span
+      style="--i: 10;"
+    >
+      A
+    </span>
+    <span
+      style="--i: 11;"
+    >
+      P
+    </span>
+    <span
+      style="--i: 12;"
+    >
+      P
+    </span>
+  </div>
+  <form
+    aria-label="form"
+    method="post"
+  >
+    <input
+      class="custom__input"
+      placeholder="Buscar gifs"
+      type="text"
+      value=""
+    />
+  </form>
+  <div
+    class="card-grid"
+  >
+    <span
+      class="loader"
+    />
+  </div>
+  <h1
+    class="title__center"
+  >
+    Haikyuu
+  </h1>
+  <div
+    class="card-grid"
+  />
+</div>
+`;
